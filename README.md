@@ -2,7 +2,8 @@
 A Rich Feature Fusion Single-Stage Object Detector
 
 ### COCO Test
-|Method	|Time	 |AP	 |APS |
+|Method	|*Time*	 |*AP*	 |*APs* |
+| :--------------------------------------- | :------: | :-----------------------: | :------: |
 |SSD512	|28	 |28.8	 |10.9 |
 |FSSD512	|35	 |31.8	 |14.2 |
 |DSOD300	|57.5	 |29.3	 |9.4 |
