@@ -1,23 +1,22 @@
-## FFBNet
-FFBNET : LIGHTWEIGHT BACKBONE FOR OBJECT DETECTION BASED FEATURE FUSION BLOCK
+## RFFNet
+A Rich Feature Fusion Single-Stage Object Detector
 
-## Our paper has been accepted by IEEE ICIP2019 for presentention.
-
-### VOC2007 Test
-| System                                   |  *mAP*   | **FPS** (1080Ti) |
-| :--------------------------------------- | :------: | :-----------------------: |
-| Mob-SSD |   68   |            190             |
-| Tiny-Yolo v3 |   61.3   |           220             |
-| Pelee |   70.9   |            -             |
-| SSD |   77.2   |            160            |
-| STDN | 78.1 |            41             |
-| FSSD | 78.8 |            150             |
-| RefineDet |  80.0  |     -      |
-| FFBNet |   73.54   |       185        |
-| VGG-FFB |   80.2   |      142        |
+### COCO Test
+|Method	|Time	 |AP	 |APS |
+|SSD512	|28	 |28.8	 |10.9 |
+|FSSD512	|35	 |31.8	 |14.2 |
+|DSOD300	|57.5	 |29.3	 |9.4 |
+|YOLO v3-608	|51	 |33.0	 |18.3 |
+|DSSD513	|156	 |33.2	 |13.0 |
+|RefineDet512	|42	 |33.0	 |16.3 |
+|RetinaNet-500	|73	 |32.5	 |13.9 |
+|ScratchDet300	|25	 |32.7	 |13.0 |
+|RFBNet512	|30	 |33.8	 |16.2 |
+|Our300	 |28	|28.0	 |11.1 |
+|Our512	 |42	|33.1	 |18.2 |
 
 ## Installation
-- Install [PyTorch 0.3.1](http://pytorch.org/) by selecting your environment on the website and running the appropriate command.
+- Install [PyTorch 1.2.0](http://pytorch.org/) by selecting your environment on the website and running the appropriate command.
 - Clone this repository. This repository is mainly based on[lzx1413/PytorchSSD](https://github.com/lzx1413/PytorchSSD), and a huge thank to him.
 
 - Compile the nms and coco tools:
@@ -44,12 +43,12 @@ sh data/scripts/VOC2012.sh # <directory>
 
 ## Training
 - First download the fc-reduced [VGG-16](https://arxiv.org/abs/1409.1556) PyTorch base network weights at: [BaiduYun Driver](https://pan.baidu.com/s/1nzOgaL8mAPex8_HLU4mb8Q), password is `mu59`.
-- MobileNet is reported in the [paper](https://arxiv.org/abs/1704.04861), weight file is available at: [BaiduYun Driver](https://pan.baidu.com/s/1LXq3p6IOoQ6YJMY0xhRkLQ), password is `f7oe`.
+
 
 ```Shell
-# Put vgg16_reducedfc.pth, and mobilenet_1.pth in a new folder weights and 
+# Put vgg16_reducedfc.pth in a new folder weights and 
 python train_test_mob.py or python train_test_vgg.py
 ```
 ### Personal advice: when use Mobilenet v1 to train voc datasets, use a higher learning rate at the beginning, the convergence performance may be better.
 
-If you are interested in this paper or interested in lightweight detectors, please QQ me (374873360)
+If you are interested in this paper or interested in lightweight detectors, please QQ me (1006626961)
