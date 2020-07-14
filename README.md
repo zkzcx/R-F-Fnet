@@ -48,9 +48,9 @@ sh data/scripts/VOC2012.sh # <directory>
 
 
 ```Shell
-# Put vgg16_reducedfc.pth in a new folder weights and 
+# Put vgg16_reducedfc.pth in a new folder weights 
 python train_test_vgg.py
 ```
-### Personal advice: when use Mobilenet v1 to train voc datasets, use a higher learning rate at the beginning, the convergence performance may be better.
+### Personal advice
 
 If you are interested in this paper or interested in lightweight detectors, please QQ me (1006626961)
