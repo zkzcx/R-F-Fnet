@@ -43,12 +43,13 @@ sh data/scripts/VOC2012.sh # <directory>
 ```
 
 ## Training
-- First download the fc-reduced [VGG-16](https://arxiv.org/abs/1409.1556) PyTorch base network weights at: [BaiduYun Driver](https://pan.baidu.com/s/1nzOgaL8mAPex8_HLU4mb8Q), password is `mu59`.
+- First download the fc-reduced [VGG-16](https://arxiv.org/abs/1409.1556) PyTorch base network weights at: [BaiduYun Driver](https://pan.baidu.com/s/1F7sEPw1xtXJOCU7B6H8L-A 
+), password is `hms4`.
 
 
 ```Shell
 # Put vgg16_reducedfc.pth in a new folder weights and 
-python train_test_mob.py or python train_test_vgg.py
+python train_test_vgg.py
 ```
 ### Personal advice: when use Mobilenet v1 to train voc datasets, use a higher learning rate at the beginning, the convergence performance may be better.
 
