@@ -1,7 +1,6 @@
 ## RFFNet
 A Rich Feature Fusion Single-Stage Object Detector
 
-
 ### VOC Dataset Test
 
 |Method		|*pre-train*|*Training data*|	*Backbone network*|	*mAP*	|*fps*|
@@ -98,7 +97,7 @@ sh data/scripts/VOC2012.sh # <directory>
 
 
 ```Shell
-# Put vgg16_reducedfc.pth in a new folder weights 
+# Put vgg16_reducedfc.pth in a new folder 'weights' 
 python train_test_vgg.py
 ```
 ### Personal advice
