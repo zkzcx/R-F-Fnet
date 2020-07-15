@@ -1,5 +1,5 @@
 ## RFFNet
-A Rich Feature Fusion Single-Stage Object Detector
+paper : A Rich Feature Fusion Single-Stage Object Detector
 
 ### VOC Dataset Test
 
@@ -76,15 +76,15 @@ A Rich Feature Fusion Single-Stage Object Detector
 
 ## Datasets
 
-### VOC Dataset
-##### Download VOC2007 trainval & test
+### PASCAL VOC Dataset
+##### Download PASCAL VOC2007 trainval & test
 
 ```Shell
 # specify a directory for dataset to be downloaded into, else default is ~/data/
 sh data/scripts/VOC2007.sh # <directory>
 ```
 
-##### Download VOC2012 trainval
+##### Download PASCAL VOC2012 trainval
 
 ```Shell
 # specify a directory for dataset to be downloaded into, else default is ~/data/
