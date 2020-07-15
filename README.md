@@ -90,6 +90,17 @@ sh data/scripts/VOC2007.sh # <directory>
 # specify a directory for dataset to be downloaded into, else default is ~/data/
 sh data/scripts/VOC2012.sh # <directory>
 ```
+##### Download MS COCO2017 Dataset
+```Shell
+http://images.cocodataset.org/zips/train2017.zip
+http://images.cocodataset.org/annotations/annotations_trainval2017.zip
+
+http://images.cocodataset.org/zips/val2017.zip
+http://images.cocodataset.org/annotations/stuff_annotations_trainval2017.zip
+
+#http://images.cocodataset.org/zips/test2017.zip
+#http://images.cocodataset.org/annotations/image_info_test2017.zip
+```
 
 ## Training
 - First download the fc-reduced [VGG-16](https://arxiv.org/abs/1409.1556) PyTorch base network weights at: [BaiduYun Driver](https://pan.baidu.com/s/1F7sEPw1xtXJOCU7B6H8L-A 
