@@ -39,14 +39,13 @@ paper : A Rich Feature Fusion Single-Stage Object Detector
 |Our300	 |28	|28.0	 |11.1 |
 |Our512	 |42	|33.1	 |18.2 |
 
-##coco2017: images
+###coco2017: images
 |train|	118287|
 | :----------------------------------- | :------: | 
 |val	|5000|
 |test|	40670|
-##coco2014: images
+###coco2014: images
 |train|	82783|
-| :--------------------------------- | :------: | 
 |val	|40504|
 |test|	40775|
 ##### train2017 == trainval35k == train2014 + val2014 - minival2014 == train2014 + val2014 - val2017
