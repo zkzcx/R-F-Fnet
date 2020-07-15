@@ -40,7 +40,8 @@ A Rich Feature Fusion Single-Stage Object Detector
 |Our300	 |28	|28.0	 |11.1 |
 |Our512	 |42	|33.1	 |18.2 |
 
-### COCO Test
+### COCO Test 
+### trainval vs trainval35k  (123; 287 V.S. 118; 287)
 | Method	|	*Training data*	|*Backbone network*	|*Time(ms)*	|*AP*	|*AP50*	|*AP75* |*APs*	|*APm*	|*APl*| 
 | :-------------------------------------- | :-------------------------------: | :-------------------------------: | :------: |:------: |:------: |:------: |:------: |:------: |:------: |
 |Faster-RCNN	|	trainval35k	|VGG-16	|147	|24.2|	45.3	|23.5	|7.7	|26.4|	37.1|
