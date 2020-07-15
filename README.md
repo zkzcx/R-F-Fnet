@@ -39,6 +39,19 @@ paper : A Rich Feature Fusion Single-Stage Object Detector
 |Our300	 |28	|28.0	 |11.1 |
 |Our512	 |42	|33.1	 |18.2 |
 
+##coco2017: images
+|train|	118287|
+| :----------------------------------- | :------: | 
+|val	|5000|
+|test|	40670|
+##coco2014: images
+|train|	82783|
+| :--------------------------------- | :------: | 
+|val	|40504|
+|test|	40775|
+##### train2017 == trainval35k == train2014 + val2014 - minival2014 == train2014 + val2014 - val2017
+##### trainval == train2017 + val2017 == train2014 + val2014
+
 ### COCO Test 
 ### trainval vs trainval35k  (123; 287 V.S. 118; 287)
 | Method	|*pre-train*|	*Training data*	|*Backbone network*	|*Time(ms)*	|*AP*	|*AP50*	|*AP75* |*APs*	|*APm*	|*APl*| 
@@ -101,27 +114,6 @@ http://images.cocodataset.org/annotations/stuff_annotations_trainval2017.zip
 ## http://images.cocodataset.org/zips/test2017.zip
 ## http://images.cocodataset.org/annotations/image_info_test2017.zip
 ```
-
-##coco2017: images
-|train|	118287|
-| :----------------------------------- | :------: | 
-|val	|5000|
-|test|	40670|
-
-##coco2014: images
-|train|	82783|
-| :--------------------------------- | :------: | 
-|val	|40504|
-|test|	40775|
-
-
-##### train2017 == trainval35k
-
-#####           == train2014 + val2014 - minival2014
-
-#####           == train2014 + val2014 - val2017
-
-
 
 ## Training
 - First download the fc-reduced [VGG-16](https://arxiv.org/abs/1409.1556) PyTorch base network weights at: [BaiduYun Driver](https://pan.baidu.com/s/1F7sEPw1xtXJOCU7B6H8L-A 
