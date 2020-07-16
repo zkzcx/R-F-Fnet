@@ -79,7 +79,7 @@ paper : A Rich Feature Fusion Single-Stage Object Detector
 
 ## Installation
 - Install [PyTorch 1.2.0](http://pytorch.org/) by selecting your environment on the website and running the appropriate command.
-- Clone this repository. This repository is mainly based on[lzx1413/PytorchSSD](https://github.com/lzx1413/PytorchSSD), and a huge thank to him.
+- Clone this repository. This repository is mainly based on [lzx1413/PytorchSSD](https://github.com/lzx1413/PytorchSSD), and a huge thank to him.
 
 - Compile the nms and coco tools:
 ```Shell
