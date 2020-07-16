@@ -83,7 +83,9 @@ paper : A Rich Feature Fusion Single-Stage Object Detector
 
 - Compile the nms and coco tools:
 ```Shell
-./make.sh
+cd RFFnet
+chmod 777 make.sh
+bash make.sh
 ```
 
 ## Datasets
