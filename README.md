@@ -87,6 +87,14 @@ cd RFFnet
 chmod 777 make.sh
 bash make.sh
 ```
+- Install pycocotool
+```Shell
+pip install pycocotool
+git clone https://github.com/pdollar/coco.git
+cd coco/PythonAPI
+python setup.py build_ext --inplace                # install pycocotools locally
+python setup.py build_ext install                     # install pycocotools to the Python site-packages
+```
 
 ## Datasets
 
