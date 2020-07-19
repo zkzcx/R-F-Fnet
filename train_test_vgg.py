@@ -28,7 +28,7 @@ def str2bool(v):
 parser = argparse.ArgumentParser(
     description='Receptive Field Block Net Training')
 parser.add_argument('-v', '--version', default='FSSD_vgg',
-                    help='RFB_vgg ,RFB_E_vgg RFB_mobile SSD_vgg version.')
+                    help='FSSD_vgg, RFB_vgg ,RFB_E_vgg SSD_vgg version.')
 parser.add_argument('-s', '--size', default='512',
                     help='300 or 512 input size.')
 parser.add_argument('-d', '--dataset', default='VOC',
@@ -94,10 +94,6 @@ if args.version == 'RFB_vgg':
     from models.RFB_Net_vgg import build_net
 elif args.version == 'RFB_E_vgg':
     from models.RFB_Net_E_vgg import build_net
-elif args.version == 'RFB_mobile':
-    from models.RFB_Net_mobile import build_net
-
-    cfg = COCO_mobile_300
 elif args.version == 'FSSD_vgg':
     if args.size == '300':
         from models.FSSD_vgg_FPN300 import build_net
