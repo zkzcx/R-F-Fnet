@@ -99,7 +99,12 @@ elif args.version == 'RFB_mobile':
 
     cfg = COCO_mobile_300
 elif args.version == 'FSSD_vgg':
-    from models.FSSD_vgg_FPN import build_net
+    if args.size == '300':
+        from models.FSSD_vgg_FPN300 import build_net
+    elif args.size == '512':
+        from models.FSSD_vgg_FPN512 import build_net
+    else:
+        print('Unkown version!')
 else:
     print('Unkown version!')
 rgb_std = (1, 1, 1)
