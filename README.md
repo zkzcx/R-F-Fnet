@@ -135,4 +135,4 @@ python train_test_vgg.py
 ```
 ### Personal advice
 
-If you are interested in this paper or interested in lightweight detectors, please QQ me (1006626961)
+If you are interested in this paper or interested in lightweight detectors, please e-mail me (zkzcx@stu.xju.edu.cn)
