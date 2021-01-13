@@ -275,12 +275,12 @@ class FSSD(nn.Module):
         pyramid_fea[2] = self.Norm3(pyramid_fea[2])
         pyramid_fea[3] = self.Norm4(pyramid_fea[3])
 
-        fpn0 = pyramid_fea[0]
-        fpn1 = pyramid_fea[1]
-        fpn2 = pyramid_fea[2]
-        fpn3 = pyramid_fea[3]
-        fpn4 = pyramid_fea[4]
-        fpn5 = pyramid_fea[5]
+#         fpn0 = pyramid_fea[0]
+#         fpn1 = pyramid_fea[1]
+#         fpn2 = pyramid_fea[2]
+#         fpn3 = pyramid_fea[3]
+#         fpn4 = pyramid_fea[4]
+#         fpn5 = pyramid_fea[5]
 
         # ----------this block is to downsample the 1*1 layer to 3*3, and concat with the original 3*3 layer, like Dense connection
         fpn_0 = list()
@@ -339,56 +339,56 @@ class FSSD(nn.Module):
         detect_0 = self.conv_cat4(detect_0)
         pyramid_fea[0] = detect_0
 
-       # ----------this block is to downsample the 3*3 layer to 5*5, and concat with the original 5*5 layer, like Dense connection
-        fpn_00 = list()
-        detect0 = fpn0
-        detect1 = fpn1
-        detect_0_1 = self.downsample(detect0)
-        #detect_0_1 = Inception_A(512)(detect_0_1)
-        fpn_00.append(detect1)
-        fpn_00.append(detect_0_1)
-        detect1 = torch.cat(fpn_00, 1)
-        detect1 = self.convcat0(detect1)
+#        # ----------this block is to downsample the 3*3 layer to 5*5, and concat with the original 5*5 layer, like Dense connection
+#         fpn_00 = list()
+#         detect0 = fpn0
+#         detect1 = fpn1
+#         detect_0_1 = self.downsample(detect0)
+#         #detect_0_1 = Inception_A(512)(detect_0_1)
+#         fpn_00.append(detect1)
+#         fpn_00.append(detect_0_1)
+#         detect1 = torch.cat(fpn_00, 1)
+#         detect1 = self.convcat0(detect1)
 
-        fpn_01 = list()
+#         fpn_01 = list()
 
-        detect2 = fpn2
-        detect_0_2 = self.downsample(detect1)
-        #detect_0_2 = Inception_A(512)(detect_0_2)
-        fpn_01.append(detect2)
-        fpn_01.append(detect_0_2)
-        detect2 = torch.cat(fpn_01, 1)
-        detect2 = self.convcat1(detect2)
+#         detect2 = fpn2
+#         detect_0_2 = self.downsample(detect1)
+#         #detect_0_2 = Inception_A(512)(detect_0_2)
+#         fpn_01.append(detect2)
+#         fpn_01.append(detect_0_2)
+#         detect2 = torch.cat(fpn_01, 1)
+#         detect2 = self.convcat1(detect2)
 
-        fpn_02 = list()
+#         fpn_02 = list()
 
-        detect3 = fpn3
-        detect_0_3 = self.downsample(detect2)
-        #detect_0_3 = Inception_A(256)(detect_0_3)
-        fpn_02.append(detect3)
-        fpn_02.append(detect_0_3)
-        detect3 = torch.cat(fpn_02, 1)
-        detect3 = self.convcat2(detect3)
+#         detect3 = fpn3
+#         detect_0_3 = self.downsample(detect2)
+#         #detect_0_3 = Inception_A(256)(detect_0_3)
+#         fpn_02.append(detect3)
+#         fpn_02.append(detect_0_3)
+#         detect3 = torch.cat(fpn_02, 1)
+#         detect3 = self.convcat2(detect3)
 
-        fpn_03 = list()
+#         fpn_03 = list()
 
-        detect4 = fpn4
-        detect_0_4 = self.downsample(detect3)
-        #detect_0_4 = Inception_A(256)(detect_0_4)
-        fpn_03.append(detect4)
-        fpn_03.append(detect_0_4)
-        detect4 = torch.cat(fpn_03, 1)
-        detect4 = self.convcat3(detect4)
+#         detect4 = fpn4
+#         detect_0_4 = self.downsample(detect3)
+#         #detect_0_4 = Inception_A(256)(detect_0_4)
+#         fpn_03.append(detect4)
+#         fpn_03.append(detect_0_4)
+#         detect4 = torch.cat(fpn_03, 1)
+#         detect4 = self.convcat3(detect4)
 
-        fpn_04 = list()
+#         fpn_04 = list()
 
-        detect5 = fpn5
-        detect_0_5 = self.downsample1(detect4)
-        #detect_0_5 = Inception_A(256)(detect_0_5)
-        fpn_04.append(detect5)
-        fpn_04.append(detect_0_5)
-        detect5 = torch.cat(fpn_04, 1)
-        detect5 = self.convcat4(detect5)
+#         detect5 = fpn5
+#         detect_0_5 = self.downsample1(detect4)
+#         #detect_0_5 = Inception_A(256)(detect_0_5)
+#         fpn_04.append(detect5)
+#         fpn_04.append(detect_0_5)
+#         detect5 = torch.cat(fpn_04, 1)
+#         detect5 = self.convcat4(detect5)
 
         # # sources[0] = sources[0] +detect0
         # pyramid_fea[1] = pyramid_fea[1] + detect1
