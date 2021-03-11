@@ -1,5 +1,5 @@
 ## RFFNet
-paper : A Rich Feature Fusion Single-Stage Object Detector
+paper
 
 ### VOC Dataset Test
 
@@ -135,4 +135,4 @@ python train_test_vgg.py
 ```
 ### Personal advice
 
-If you are interested in this paper or interested in lightweight detectors, please e-mail me (zkzcx@stu.xju.edu.cn)
+If you are interested in this paper or interested in lightweight detectors, please e-mail me
